@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Steam logo</title>
+  <desc id="desc">Steam-style gaming platform icon</desc>
+  <defs>
+    <linearGradient id="bg" x1="30" x2="210" y1="26" y2="214" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1b2838" />
+      <stop offset="1" stop-color="#171a21" />
+    </linearGradient>
+  </defs>
+  <circle cx="120" cy="120" r="112" fill="url(#bg)" />
+  <circle cx="158" cy="78" r="45" fill="#66c0f4" />
+  <circle cx="158" cy="78" r="24" fill="#171a21" />
+  <circle cx="158" cy="78" r="14" fill="#c7d5e0" />
+  <path
+    fill="none"
+    stroke="#c7d5e0"
+    stroke-linecap="round"
+    stroke-width="24"
+    d="m87 144 43-39"
+  />
+  <circle cx="75" cy="155" r="34" fill="#c7d5e0" />
+  <circle cx="75" cy="155" r="18" fill="#171a21" />
+  <path
+    fill="none"
+    stroke="#66c0f4"
+    stroke-linecap="round"
+    stroke-width="10"
+    d="M63 189c26 11 58 8 83-9"
+    opacity=".75"
+  />
+</svg>

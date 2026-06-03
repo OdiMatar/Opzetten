@@ -30,8 +30,9 @@ function App() {
   return (
     <main className="app">
       <section className="intro">
+        <img className="steam-logo" src="/steam-logo.svg" alt="Steam logo" />
         <p className="eyebrow">React hello world app</p>
-        <h1>Hello world</h1>
+        <h1>Steam API hello world</h1>
         <p>{status}</p>
       </section>
     </main>
