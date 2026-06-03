@@ -1,14 +1,13 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 
-const API_URL =
-  'https://api.open-meteo.com/v1/forecast?latitude=52.37&longitude=4.9&current=temperature_2m,wind_speed_10m'
+const API_URL = '/api/steam/global-stats'
 
 function App() {
   const [status, setStatus] = useState('API-data ophalen...')
 
   useEffect(() => {
-    async function fetchWeatherData() {
+    async function fetchSteamData() {
       try {
         const response = await fetch(API_URL)
 
@@ -17,15 +16,15 @@ function App() {
         }
 
         const data = await response.json()
-        console.log('Open-Meteo data:', data)
-        setStatus('API-data opgehaald. Bekijk de browserconsole.')
+        console.log('Steam API data:', data)
+        setStatus('Steam API-data opgehaald. Bekijk de browserconsole.')
       } catch (error) {
-        console.error('Fout bij ophalen van API-data:', error)
-        setStatus('API-data ophalen is mislukt. Bekijk de browserconsole.')
+        console.error('Fout bij ophalen van Steam API-data:', error)
+        setStatus('Steam API-data ophalen is mislukt. Bekijk de browserconsole.')
       }
     }
 
-    fetchWeatherData()
+    fetchSteamData()
   }, [])
 
   return (
